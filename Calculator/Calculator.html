@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="CalcJS.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CalcCSS.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="resContainer" style="background-color: black;">
+            <div id="Pframe"></div>
+            <div id="frame"></div>
+        </div> 
+        <div id="keys">
+            <div id="key-CE" onclick="clearOP()">CE</div>
+            <div id="key-C" onclick="clearDigit()">C</div>
+            <div id="key-div" onclick="appendNum('/')">/</div>
+            <div id="key-mul" onclick="appendNum('*')">x</div>
+            <div id="key-7" onclick="appendNum('7')">7</div>
+            <div id="key-8" onclick="appendNum('8')">8</div>
+            <div id="key-9" onclick="appendNum('9')">9</div>
+            <div id="key-pl" onclick="appendNum('+')">+</div>
+            <div id="key-4" onclick="appendNum('4')">4</div>
+            <div id="key-5" onclick="appendNum('5')">5</div>
+            <div id="key-6" onclick="appendNum('6')">6</div>
+            <div id="key-min" onclick="appendNum('-')">-</div>
+            <div id="key-1" onclick="appendNum('1')">1</div>
+            <div id="key-2" onclick="appendNum('2')">2</div>
+            <div id="key-3" onclick="appendNum('3')">3</div>
+            <div id="key-sq" onclick="calcSq()">x²</div>
+            <div id="key-0" onclick="appendNum('0')">0</div>
+            <div id="key-sqrt" onclick="calcSqrt()">√x</div>
+            <div id="key-calc" onclick="calcRes()">=</div>
+        </div>
+    </div>
+</body>
+</html>
